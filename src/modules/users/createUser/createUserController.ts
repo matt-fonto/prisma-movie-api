@@ -14,6 +14,7 @@ export class CreateUserController {
     // Call the execute method from the CreateUser service
     const result = await createUser.execute({ name, email });
 
+    // Return the result
     return res.status(201).json(result);
   }
 }
